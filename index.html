@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <img src="Logo.png" class="logo" alt="logo de Alura">
+        </header>
+
+        <main>
+            <div id="texto-principal">
+                <textarea id="texto" placeholder ="Ingrese el texto aquí"></textarea>
+            </div>  
+                <aside>
+                    <div class="cuadroMuñeco" id="cuadroMuñeco">
+                        <img src="Muñeco.png" class="Muñeco">
+                        <div class="noMensaje">
+                            <h1 class="cuadro1">Ningún mensaje fue encontrado</h1>
+                        <p class="cuadro2">Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+                    </div>
+                    <div id="cuadroEncriptado" style="display: none;">
+                        <span id="textoencriptado"><textarea id="texto-encriptado"></textarea></span>
+                        <button id="Copiar" onclick="Copiar()">Copiar</button>
+                    </div>
+                </aside>  
+            <section class="area-botones">
+                <div class="condiciones">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icono"><path fill="#969292" d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z" />
+                    </svg><h1 class="condiciones-texto">Solo letras minúsculas y sin acentos</h1>
+                </div>
+                <div class="botones">
+                    <button onclick="Encriptar()" class="encriptar" >Encriptar</botton>
+                    <button onclick="Desencriptar()" class="desencriptar">Desencriptar</button>
+                </div>      
+            </section>
+        </main>
+
+        <footer>
+            <p class="pie">Joanna Fernandez, 2024</p>
+        </footer>
+        
+
+        <script src="app.js" defer></script>
+
+    </body>
+</html>
