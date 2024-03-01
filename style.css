@@ -197,7 +197,7 @@ footer{
         position: absolute;
         top: 18vh;
         left: 55px;
-        font-size: 20px;
+        font-size: 30px;
     }
     #texto::placeholder{
         font-size: 22px;
@@ -216,9 +216,15 @@ footer{
         height: 25vh;
         position: absolute;
         left: 10vw;
-        top: 61vh;
+        top: 65vh;
         text-align: center;
         margin-top: 10px;
+    }
+    #Copiar{
+        transform: scale(60%);
+        position: absolute;
+        left: 4vw;
+        bottom: 1vh;
     }
     .cuadro1, .cuadro2{
         width: 70vw;
@@ -232,7 +238,7 @@ footer{
         font-weight: bold;
     }
     .cuadro2{
-        bottom: 6vh;
+        bottom: 3vh;
         font-size: 14px;
     }
     .Muñeco{
@@ -247,13 +253,7 @@ footer{
         margin-top: 10px;
     }
     footer{
-        width: 100vw;
-        text-align: center;
-    }
-    .pie{
-        position: absolute;
-        left: 32vw;
-        top: 3vh;
+        display: none;
     }
 }
 
