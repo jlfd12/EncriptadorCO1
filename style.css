@@ -17,8 +17,8 @@ body{
 }
 
 #texto{
-    width: 700px;
-    height: 230px;
+    width: 50vw;
+    height: 45vh;
     background-color: #D8DFE8;
     border: none;
     font-size: 30px;
@@ -30,7 +30,7 @@ body{
 
 #texto::placeholder{
     color: #0A3871;
-    font-size: 28px;
+    font-size: 30px;
     font-family: 'Inter';
 }
 
@@ -63,7 +63,7 @@ body{
     text-align: center;
     width: 25vw;
     vertical-align: middle;
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: orangered;
     line-height: 120%;
     position: absolute;
