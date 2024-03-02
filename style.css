@@ -200,31 +200,38 @@ footer{
         font-size: 30px;
     }
     #texto::placeholder{
-        font-size: 22px;
+        font-size: 24px;
     }
     .area-botones{
         width: 80vw;
-        transform: scale(90%);
+        scale: 80%;
         height: 20vh;
         position: absolute;
         left: 9vw;
-        top: 41vh;
-        scale: 90%;
+        bottom: 38vh;
     }
-    .cuadroMuñeco, #cuadroEncriptado, #texto-encriptado{
+    .cuadroMuñeco, #cuadroEncriptado{
         width: 80vw;
         height: 25vh;
         position: absolute;
         left: 10vw;
         top: 65vh;
         text-align: center;
-        margin-top: 10px;
+    }
+    #texto-encriptado{
+        height: 15vh;
+        width: 70vw;
+        font-size: 24px;
+        position: absolute;
+        left: 17px;
+        top: 15px;
     }
     #Copiar{
-        transform: scale(60%);
+        width: 60vw;
+        height: 5vh;
         position: absolute;
-        left: 4vw;
-        bottom: 1vh;
+        left: 10vw;
+        bottom: 0.5vh;
     }
     .cuadro1, .cuadro2{
         width: 70vw;
@@ -242,12 +249,7 @@ footer{
         font-size: 14px;
     }
     .Muñeco{
-        opacity: 30%;
-        position: absolute;
-        left: 10vw;
-        top: 2vh;
-        height: 150px;
-        width: 200px;
+        display: none;
     }
     .desencriptar{
         margin-top: 10px;
@@ -257,39 +259,43 @@ footer{
     }
 }
 
-@media screen and (min-width:481px) and (max-width:920px){
+@media screen and (min-width:481px) and (max-width:1030px){
     #texto{
-        left: 15vw;
+        left: 17vw;
+        top: 17vh;
         font-size: 40px;
-        height: 500px;
-        width: 380px;
+        height: 30vh;
+        width: 70vw;
     }
     #texto::placeholder{
-        font-size: 30px;
+        font-size: 42px;
     }
-    .cuadroMuñeco, #cuadroEncriptado, #texto-encriptado{
+    .cuadroMuñeco, #cuadroEncriptado{
         position: absolute;
-        top: 40vh;
-        height: 400px;
+        top: 65vh;
+        left: 12vw;
+        height: 25vh;
+        width: 75vw;
     }
     .Muñeco{
-        position: absolute;
-        top: 3vh;
+        display: none;
     }
     .cuadro1{
-        bottom: 9vh;
+        bottom: 12vh;
+        width: 50vw;
+        left: 9vw;
+        font-size: 34px;
     }
     .cuadro2{
-        bottom: 3.5vh;
+        bottom: 6vh;
+        font-size: 28px;
+        width: 68vw;
     }
     .area-botones{
-        bottom: 10vh;
-        left: 3vw;
+        bottom: 40vh;
+        left: 12vw;
     }
     footer{
-        height: 80px;
-    }
-    .pie{
-        top: 30px;
+        display: none;
     }
 }
