@@ -21,7 +21,7 @@ body{
     height: 230px;
     background-color: #D8DFE8;
     border: none;
-    font-size: 36px;
+    font-size: 32px;
     position: absolute;
     top: 23vh;
     left: 12vw;
@@ -90,7 +90,7 @@ body{
     width: 23vw;
     height: 50vh;
     border: none;
-    font-size: 32px;
+    font-size: 30px;
     color: rgb(34, 35, 39);
     background-color: mintcream;
 }
