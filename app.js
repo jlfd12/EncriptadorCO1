@@ -27,7 +27,7 @@ function Desencriptar(){
 }
 
 function minusculasacentos(texto){
-    if(texto == '' || texto == ' '){
+    if(texto == '' || texto.includes('  ') || texto == ' '){
         alert("Ingrese texto.\nRecuerde que debe ser con minúsculas y sin acentos.");
         location.reload();
         return 1;

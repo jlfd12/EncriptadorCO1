@@ -21,7 +21,7 @@ body{
     height: 230px;
     background-color: #D8DFE8;
     border: none;
-    font-size: 30px;
+    font-size: 36px;
     position: absolute;
     top: 23vh;
     left: 12vw;
@@ -30,7 +30,7 @@ body{
 
 #texto::placeholder{
     color: #0A3871;
-    font-size: 28px;
+    font-size: 2vw;
     font-family: 'Inter';
 }
 
@@ -52,7 +52,7 @@ body{
 
 .Muñeco{
     width: 20vw;
-    height: 40vh;
+    height: 38vh;
     position: relative;
     top: 10vh;
     left: 4vw;
@@ -63,7 +63,7 @@ body{
     text-align: center;
     width: 25vw;
     vertical-align: middle;
-    font-size: 24px;
+    font-size: 2vw;
     color: orangered;
     line-height: 120%;
     position: absolute;
@@ -75,12 +75,11 @@ body{
     text-align: center;
     width: 25vw;
     height: 48px;
-    font-size: 16px;
+    font-size: 1.5vw;
     color: black;
-    line-height: 130%;
     vertical-align: middle;
     position: absolute;
-    bottom: 12vh;
+    bottom: 14vh;
     left: 2.5vw;
 }
 
@@ -91,14 +90,14 @@ body{
     width: 23vw;
     height: 50vh;
     border: none;
-    font-size: 26px;
+    font-size: 32px;
     color: rgb(34, 35, 39);
     background-color: mintcream;
 }
 
 #Copiar{
-    width: 270px;
-    height: 65px;
+    width: 15vw;
+    height: 3vw;
     border-radius: 24px;
     color: orangered;
     border-color: orangered;
@@ -108,7 +107,7 @@ body{
     line-height: 19.36px;
     text-align: center;
     position: absolute;
-    right: 65px;
+    left: 8vw;
     bottom: 40px;
     cursor: pointer;
 }
@@ -140,7 +139,7 @@ body{
 }
 
 .encriptar{
-    font-size: 18px;
+    font-size: 20px;
     width: 320px;
     height: 60px;
     color: white;
@@ -152,7 +151,7 @@ body{
 }
 
 .desencriptar{
-    font-size: 18px;
+    font-size: 20px;
     width: 320px;
     height: 60px;
     color: orangered;
