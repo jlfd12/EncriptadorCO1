@@ -201,15 +201,14 @@ footer{
 
 @media screen and (max-width: 600px) and (min-width:300px){
     .logo{
-        position: absolute;
-        left: 38vw;
+        transform: scale(80%);
     }
     #texto{
         width: 80vw;
         height: 20vh;
         position: absolute;
         top: 20vh;
-        left: 40px;
+        left: 50px;
         font-size: 5vw;
     }
     #texto::placeholder{
@@ -237,7 +236,7 @@ footer{
         height: 25vh;
         position: absolute;
         left: 10vw;
-        top: 68vh;
+        top: 65vh;
         text-align: center;
     }
     #texto-encriptado{
@@ -417,13 +416,13 @@ footer{
         height: 25vh;
         position: absolute;
         left: 10vw;
-        top: 70vh;
+        top: 68vh;
         text-align: center;
     }
     #texto-encriptado{
         height: 15vh;
         width: 52vw;
-        font-size: 8vw;
+        font-size: 6vw;
         position: absolute;
         left: 17px;
         top: 15px;
@@ -433,7 +432,7 @@ footer{
         height: 5vh;
         position: absolute;
         left: 14vw;
-        bottom: 5.5vh;
+        bottom: 3vh;
         transform: scale(80%);
     }
     #reset{
