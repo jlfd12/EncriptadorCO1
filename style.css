@@ -1,5 +1,5 @@
 body{
-    background: #D8DFE8;
+    background: #89ad97;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -19,17 +19,17 @@ body{
 #texto{
     width: 50vw;
     height: 45vh;
-    background-color: #D8DFE8;
+    background-color: #89ad97;
     border: none;
     font-size: 30px;
     position: absolute;
     top: 23vh;
     left: 12vw;
-    color: #0A3871;
+    color: #f8fafc;
 }
 
 #texto::placeholder{
-    color: #0A3871;
+    color: #fdfeff;
     font-size: 30px;
     font-family: 'Inter';
 }
@@ -63,7 +63,7 @@ body{
     text-align: center;
     width: 25vw;
     vertical-align: middle;
-    font-size: 1.8vw;
+    font-size: 1.6em;
     color: orangered;
     line-height: 120%;
     position: absolute;
@@ -75,11 +75,11 @@ body{
     text-align: center;
     width: 25vw;
     height: 48px;
-    font-size: 1.5vw;
+    font-size: 1.3em;
     color: black;
     vertical-align: middle;
     position: absolute;
-    bottom: 14vh;
+    bottom: 13vh;
     left: 2.5vw;
 }
 
@@ -97,8 +97,8 @@ body{
 
 #Copiar{
     width: 17vw;
-    height: 4vw;
-    border-radius: 18px;
+    height: 3vw;
+    border-radius: 15px;
     color: orangered;
     border-color: orangered;
     font-size: 18px;
@@ -106,16 +106,31 @@ body{
     line-height: 19.36px;
     text-align: center;
     position: absolute;
-    left: 7vw;
-    bottom: 40px;
+    left: 6.5vw;
+    bottom: 80px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#reset{
+    width: 17vw;
+    height: 3vw;
+    border-radius: 15px;
+    color: orangered;
+    border-color: orangered;
+    font-size: 18px;
+    font-family: "Inter";
+    line-height: 19.36px;
+    text-align: center;
+    position: absolute;
+    left: 6.5vw;
+    bottom: 20px;
     cursor: pointer;
 }
-
 .area-botones{
-    display: inline-block;
+    display: block;
     position: absolute;
     left: 7vw;
-    bottom: 13vh;
+    bottom: 12vh;
 }
 
 .condiciones{
@@ -135,15 +150,16 @@ body{
     line-height: 120%;
     font-size: 14px;
     margin-left: 18px;
+    color: white;
 }
 
 .encriptar{
     font-size: 20px;
-    width: 320px;
-    height: 60px;
+    width: 300px;
+    height: 50px;
     color: white;
     background-color: rgb(255, 84, 22);
-    border-radius: 24px;
+    border-radius: 16px;
     margin-right: 10px;
     border-color: #e6e6e6;
     cursor: pointer;
@@ -151,16 +167,16 @@ body{
 
 .desencriptar{
     font-size: 20px;
-    width: 320px;
-    height: 60px;
+    width: 300px;
+    height: 50px;
     color: orangered;
     background-color: mintcream;
-    border-radius: 24px;
+    border-radius: 16px;
     border-color: orangered;
     cursor: pointer;
 }
 
-.encriptar:hover, .desencriptar:hover, #Copiar:hover{
+.encriptar:hover, .desencriptar:hover, #Copiar:hover, #reset:hover{
     transform: scale(104%);
 }
 
@@ -180,92 +196,117 @@ footer{
     font-family: "Frankin Gothic";
     position: absolute;
     top: 15px;
-    left: 44%;
+    left: 38%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px) and (min-width:300px){
     .logo{
         position: absolute;
-        left: 35vw;
+        left: 38vw;
     }
     #texto{
         width: 80vw;
         height: 20vh;
         position: absolute;
-        top: 18vh;
-        left: 55px;
-        font-size: 30px;
+        top: 20vh;
+        left: 40px;
+        font-size: 4.5vw;
     }
     #texto::placeholder{
-        font-size: 24px;
+        font-size: 4.5vw;
     }
     .area-botones{
-        width: 80vw;
-        scale: 80%;
-        height: 20vh;
+        transform: scale(70%);
         position: absolute;
-        left: 9vw;
-        bottom: 35vh;
+        left: 20px;
+        top: 47vh;
+    }
+    .desencriptar{
+        width: 70vw;
+        height: 8vh;
+        font-size: 4vw;
+        margin-top: 5px;
+    }
+    .encriptar{
+        width: 70vw;
+        height: 8vh;
+        font-size: 4vw;
     }
     .cuadroMuñeco, #cuadroEncriptado{
         width: 80vw;
         height: 25vh;
         position: absolute;
         left: 10vw;
-        top: 65vh;
+        top: 70vh;
         text-align: center;
     }
     #texto-encriptado{
         height: 15vh;
-        width: 67vw;
-        font-size: 24px;
+        width: 50vw;
+        font-size: 20px;
         position: absolute;
         left: 17px;
         top: 15px;
     }
     #Copiar{
-        width: 60vw;
+        width: 18vw;
         height: 5vh;
         position: absolute;
-        left: 10vw;
-        bottom: 0.5vh;
+        left: 55vw;
+        bottom: 15vh;
+        border-radius: 9px;
+        font-size: 3vw;
+        text-align: center;
+    }
+    #reset{
+        width: 18vw;
+        height: 5vh;
+        position: absolute;
+        left: 55vw;
+        bottom: 7vh;
+        border-radius: 9px;
+        font-size: 3vw;
     }
     .cuadro1, .cuadro2{
-        width: 70vw;
+        width: 75vw;
         margin-left: 0;
-        position: absolute;
-        left: 3.5vw;
     }
     .cuadro1{
-        top: 5vh;
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 4vw;
+        top: 4vh;
+        left: 3vw;
     }
     .cuadro2{
-        bottom: 3vh;
-        font-size: 14px;
+        font-size: 3.5vw;
+        top: 12vh;
+        left: 3vw;
     }
     .Muñeco{
         display: none;
     }
-    .desencriptar{
-        margin-top: 10px;
-    }
     footer{
-        display: none;
+        height: 20px;
+        text-align: center;
+    }
+    .pie{
+        font-size: 10px;
+        left: 30vw;
+        top: 5px;
     }
 }
 
-@media screen and (min-width:481px) and (max-width:1030px){
+@media screen and (min-width:601px) and (max-width:1100px){
     #texto{
         left: 17vw;
         top: 17vh;
-        font-size: 40px;
+        font-size: 5vw;
+        font-size: 5vh;
         height: 30vh;
         width: 70vw;
     }
     #texto::placeholder{
-        font-size: 42px;
+        font-size: 4.5vw;
+        font-size: 4.5vh;
     }
     .cuadroMuñeco, #cuadroEncriptado{
         position: absolute;
@@ -278,20 +319,157 @@ footer{
         display: none;
     }
     .cuadro1{
-        bottom: 12vh;
-        width: 45vw;
-        left: 15vw;
-        font-size: 34px;
+        top: 4vh;
+        width: 60vw;
+        left: 7vw;
+        font-size: 4vw;
+        font-size: 4vh;
     }
     .cuadro2{
-        bottom: 6vh;
-        font-size: 28px;
+        bottom: 3vh;
+        font-size: 3vw;
+        font-size: 3vh;
         width: 60vw;
         left: 7vw;
     }
+    #texto-encriptado{
+        height: 19vh;
+        width: 45vw;
+        position: relative;
+        top: 10px;
+        border-radius: 15px;
+        left: 15px;
+        font-size: 2vw;
+    }
+    #Copiar{
+        position: absolute;
+        top: 7vh;
+        left: 50vw;
+        border-radius: 10px;
+        width: 20vw;
+        height: 5vh;
+        font-size: 1.5vw;
+    }
+    #reset{
+        position: absolute;
+        top: 14vh;
+        left: 50vw;
+        border-radius: 10px;
+        width: 20vw;
+        height: 5vh;
+        font-size: 1.5vw;
+    }
     .area-botones{
-        bottom: 40vh;
-        left: 12vw;
+        bottom: 36vh;
+        left: 15vw;
+    }
+    .desencriptar{
+        position: relative;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 30vw;
+        font-size: 2vw;
+        height: 6vh;
+    }
+    .encriptar{
+        width: 30vw;
+        font-size: 2vw;
+        height: 6vh;
+    }
+    footer{
+        height: 40px;
+        text-align: center;
+    }
+    .pie{
+        left: 34vw;
+    }
+}
+@media screen and (max-width:299px){
+    .logo{
+        position: absolute;
+        left: 5vw;
+        transform: scale(50%);
+    }
+    #texto{
+        width: 80vw;
+        height: 20vh;
+        position: absolute;
+        top: 18vh;
+        left: 30px;
+        font-size: 20px;
+    }
+    #texto::placeholder{
+        font-size: 6vw;
+    }
+    .area-botones{
+        transform: scale(70%);
+        position: relative;
+        left: 2vw;
+        top: 47vh;
+        width: 90vw;
+    }
+    .condiciones-texto{
+        font-size: 10px;
+    }
+    .desencriptar{
+        width: 80vw;
+        height: 7vh;
+        font-size: 8vw;
+        margin-top: 7px;
+    }
+    .encriptar{
+        width: 80vw;
+        height: 7vh;
+        font-size: 8vw;
+    }
+    .cuadroMuñeco, #cuadroEncriptado{
+        width: 80vw;
+        height: 25vh;
+        position: absolute;
+        left: 10vw;
+        top: 70vh;
+        text-align: center;
+    }
+    #texto-encriptado{
+        height: 15vh;
+        width: 52vw;
+        font-size: 8vw;
+        position: absolute;
+        left: 17px;
+        top: 15px;
+    }
+    #Copiar{
+        width: 50vw;
+        height: 5vh;
+        position: absolute;
+        left: 14vw;
+        bottom: 5.5vh;
+        transform: scale(80%);
+    }
+    #reset{
+        width: 50vw;
+        height: 5vh;
+        position: absolute;
+        left: 14vw;
+        bottom: 0.5vh;
+        transform: scale(80%);
+    }
+    .cuadro1, .cuadro2{
+        width: 70vw;
+        margin-left: 0;
+    }
+    .cuadro1{
+        font-size: 7vw;
+        top: 4.5vh;
+        left: 5vw;
+    }
+    .cuadro2{
+        font-size: 5vw;
+        top: 14vh;
+        left: 5vw;
+    }
+    .Muñeco{
+        display: none;
     }
     footer{
         display: none;

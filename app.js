@@ -1,4 +1,4 @@
-let texto = " ";
+let texto = '';
 let textoencriptado = '';
 
 
@@ -49,9 +49,12 @@ function Copiar(){
 }
 
 function limpiarCaja(){ 
-    document.getElementById('texto').value = '';
     document.getElementById('cuadroMuñeco').style.display = "none";
     document.getElementById('cuadroEncriptado').style.display = "block";
+}
+
+function reset(){
+    location.reload();
 }
 
 
