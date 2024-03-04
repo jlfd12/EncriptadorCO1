@@ -210,16 +210,16 @@ footer{
         position: absolute;
         top: 20vh;
         left: 40px;
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
     #texto::placeholder{
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
     .area-botones{
-        transform: scale(70%);
+        transform: scale(80%);
         position: absolute;
-        left: 20px;
-        top: 47vh;
+        left: 12vw;
+        top: 40vh;
     }
     .desencriptar{
         width: 70vw;
@@ -237,7 +237,7 @@ footer{
         height: 25vh;
         position: absolute;
         left: 10vw;
-        top: 70vh;
+        top: 68vh;
         text-align: center;
     }
     #texto-encriptado{
@@ -272,26 +272,20 @@ footer{
         margin-left: 0;
     }
     .cuadro1{
-        font-size: 4vw;
-        top: 4vh;
+        font-size: 4.8vw;
+        top: 3vh;
         left: 3vw;
     }
     .cuadro2{
-        font-size: 3.5vw;
-        top: 12vh;
+        font-size: 4vw;
+        top: 13vh;
         left: 3vw;
     }
     .Muñeco{
         display: none;
     }
     footer{
-        height: 20px;
-        text-align: center;
-    }
-    .pie{
-        font-size: 10px;
-        left: 30vw;
-        top: 5px;
+        display: none;
     }
 }
 
@@ -377,17 +371,13 @@ footer{
         height: 6vh;
     }
     footer{
-        height: 40px;
-        text-align: center;
-    }
-    .pie{
-        left: 34vw;
+       display: none;
     }
 }
 @media screen and (max-width:299px){
     .logo{
         position: absolute;
-        left: 5vw;
+        left: 25vw;
         transform: scale(50%);
     }
     #texto{
@@ -402,9 +392,9 @@ footer{
         font-size: 6vw;
     }
     .area-botones{
-        transform: scale(70%);
+        transform: scale(80%);
         position: relative;
-        left: 2vw;
+        left: 5vw;
         top: 47vh;
         width: 90vw;
     }
