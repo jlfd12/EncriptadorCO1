@@ -19,11 +19,25 @@ function Desencriptar(){
     const vocales = ["e", "a", "o", "u", "i"];
     const reemplazo = ["enter", "ai", "ober", "ufat", "imes"];
 
-    textoencriptado = document.getElementById('texto-encriptado').value;
-    for(let j = 0; j < vocales.length; j++){
-        textoencriptado = textoencriptado.replaceAll(reemplazo[j], vocales[j]);
+    if(document.getElementById('texto-encriptado').value == ''){
+        textoencriptado = document.getElementById('texto').value;
+        minusculasacentos(textoencriptado);
+        for(let j = 0; j < vocales.length; j++){
+            textoencriptado = textoencriptado.replaceAll(reemplazo[j], vocales[j]);
+        }
+        if(textoencriptado == document.getElementById('texto').value){
+            return 1;
+        }else{
+            limpiarCaja();
+            document.getElementById('texto-encriptado').value = textoencriptado;
+        }
+    }else{
+        textoencriptado = document.getElementById('texto-encriptado').value;
+        for(let j = 0; j < vocales.length; j++){
+            textoencriptado = textoencriptado.replaceAll(reemplazo[j], vocales[j]);
+        }
+        document.getElementById('texto-encriptado').value = textoencriptado;
     }
-    document.getElementById('texto-encriptado').value = textoencriptado;
 }
 
 function minusculasacentos(texto){
