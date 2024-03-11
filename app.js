@@ -19,24 +19,42 @@ function Desencriptar(){
     const vocales = ["e", "a", "o", "u", "i"];
     const reemplazo = ["enter", "ai", "ober", "ufat", "imes"];
 
-    if(document.getElementById('texto-encriptado').value == ''){
-        textoencriptado = document.getElementById('texto').value;
-        minusculasacentos(textoencriptado);
-        for(let j = 0; j < vocales.length; j++){
-            textoencriptado = textoencriptado.replaceAll(reemplazo[j], vocales[j]);
-        }
-        if(textoencriptado == document.getElementById('texto').value){
-            return 1;
+    textoencriptado = document.getElementById('texto').value;
+    if(checarDesencriptar(reemplazo, textoencriptado) == true){
+        if(document.getElementById('texto-encriptado').value != ''){
+            textoencriptado = document.getElementById('texto-encriptado').value;
+            for(let i = 0; i < vocales.length; i++){
+            textoencriptado = textoencriptado.replaceAll(reemplazo[i], vocales[i]);
+             }
+            document.getElementById('texto-encriptado').value = textoencriptado;
         }else{
+            minusculasacentos(textoencriptado);
             limpiarCaja();
+            for(let i = 0; i < vocales.length; i++){
+            textoencriptado = textoencriptado.replaceAll(reemplazo[i], vocales[i]);
+            }
             document.getElementById('texto-encriptado').value = textoencriptado;
         }
     }else{
         textoencriptado = document.getElementById('texto-encriptado').value;
-        for(let j = 0; j < vocales.length; j++){
-            textoencriptado = textoencriptado.replaceAll(reemplazo[j], vocales[j]);
+        for(let i = 0; i < vocales.length; i++){
+            textoencriptado = textoencriptado.replaceAll(reemplazo[i], vocales[i]);
         }
         document.getElementById('texto-encriptado').value = textoencriptado;
+    }
+}
+
+function checarDesencriptar(reemplazo, textoencriptado){
+    let cuenta = 0;
+    for(let j = 0; j < reemplazo.length; j++){
+        if(textoencriptado.includes(reemplazo[j])){
+            cuenta++;
+        }
+    }
+    if(cuenta > 0){
+        return true;
+    }else{
+        return false;
     }
 }
 
