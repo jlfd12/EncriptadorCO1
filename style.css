@@ -212,7 +212,7 @@ footer{
     #texto{
         left: 13vw;
         border-radius: 15px;
-        width: 72vw;
+        width: 74vw;
         height: 20vh;
         top: 15vh;
         font-size: 5vw;
@@ -263,7 +263,7 @@ footer{
         width: 75vw;
     }
     .cuadro2{
-        left: 3vw;
+        left: 3.5vw;
         top: 15vh;
         font-size: 4vw;
         width: 70vw;

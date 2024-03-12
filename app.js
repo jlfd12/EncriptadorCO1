@@ -20,6 +20,7 @@ function Desencriptar(){
     const reemplazo = ["enter", "ai", "ober", "ufat", "imes"];
 
     textoencriptado = document.getElementById('texto').value;
+    minusculasacentos(textoencriptado);
     if(checarDesencriptar(reemplazo, textoencriptado) == true){
         if(document.getElementById('texto-encriptado').value != ''){
             textoencriptado = document.getElementById('texto-encriptado').value;
@@ -28,7 +29,6 @@ function Desencriptar(){
              }
             document.getElementById('texto-encriptado').value = textoencriptado;
         }else{
-            minusculasacentos(textoencriptado);
             limpiarCaja();
             for(let i = 0; i < vocales.length; i++){
             textoencriptado = textoencriptado.replaceAll(reemplazo[i], vocales[i]);
